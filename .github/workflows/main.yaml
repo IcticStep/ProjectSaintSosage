@@ -2,6 +2,7 @@ name: Debug android 🎮
 run-name: Debug android 🎮 ${{ github.ref }} ${{ github.sha }}
 
 on: 
+#  push:
   workflow_dispatch:
 
 env:
@@ -11,19 +12,24 @@ env:
 
 jobs:
   build:
-    name: Debug for Android 🤖
+    name: Build for Android 🖥️
     runs-on: ubuntu-latest
     
     strategy:
       fail-fast: false
       matrix:
         projectPath:
-          - "src/Office Worker"
+          - "LibraryOA"
     steps:
       - name: Free Disk Space (Ubuntu)
         uses: jlumbroso/free-disk-space@main
         with:
+          # this might remove tools that are actually needed,
+          # if set to "true" but frees about 6 GB
           tool-cache: false
+          
+          # all of these default to true, but feel free to set to
+          # "false" if necessary for your workflow
           android: true
           dotnet: true
           haskell: true
@@ -50,41 +56,15 @@ jobs:
           projectPath: ${{ matrix.projectPath }}
           targetPlatform: Android
           androidExportType: androidPackage
-          androidKeystoreName: user
+          androidKeystoreName: user # This file won't exist, but this property needs to exist.
           androidKeystoreBase64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
           androidKeystorePass: ${{ secrets.ANDROID_KEYSTORE_PASS }}
           androidKeyaliasName: ${{ secrets.ANDROID_KEYALIAS_NAME }}
           androidKeyaliasPass: ${{ secrets.ANDROID_KEYALIAS_PASS }}
-          androidTargetSdkVersion: AndroidApiLevel35
-          buildName: OfficeWorker-debug-${{ github.run_number }}
+          androidTargetSdkVersion: AndroidApiLevel33
+          buildName: Libtake-development-${{ github.run_number }}
 
-      # Upload Build Artifact
       - uses: actions/upload-artifact@v4
         with:
-          name: "Office-worker-development-${{ github.run_number }}"
+          name: "Libtake-development-${{ github.run_number }}"
           path: build
-
-  notify:
-    name: Notify via Telegram 📲
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Download Build Artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: "Office-worker-development-${{ github.run_number }}"
-          path: extracted_build
-
-      - name: Extract APK
-        run: |
-          APK_FILE=$(find extracted_build -name "*.apk")
-          echo "APK_FILE=$APK_FILE" >> $GITHUB_ENV
-
-      - name: Send Telegram Notification with APK
-        uses: appleboy/telegram-action@master
-        with:
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          to: ${{ secrets.TELEGRAM_CI_CHAT_ID }}
-          message: "New build for the Office Worker game is ready! Download the APK below."
-          document: ${{ env.APK_FILE }}
