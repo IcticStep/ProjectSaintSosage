@@ -4,6 +4,9 @@ run-name: Debug android 🎮 ${{ github.ref }} ${{ github.sha }}
 on: 
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 env:
   UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
   UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
