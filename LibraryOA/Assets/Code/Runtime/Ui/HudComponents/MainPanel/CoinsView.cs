@@ -15,6 +15,7 @@ namespace Code.Runtime.Ui.HudComponents.MainPanel
         private RectTransform _animationTarget;
         
         private IPlayerInventoryService _playerInventoryService;
+        private Tweener _tweener;
 
         [Inject]
         private void Construct(IPlayerInventoryService playerInventoryService) =>
@@ -35,7 +36,12 @@ namespace Code.Runtime.Ui.HudComponents.MainPanel
         private void UpdateView()
         {
             _text.text = _playerInventoryService.Coins.ToString();
-            _animationTarget
+            if(_tweener != null)
+            {
+                _tweener.Kill(complete: true);
+                _tweener = null;
+            }
+            _tweener = _animationTarget
                 .DOPunchScale(Vector3.one * 1.1f, 0.5f, 1, 0.5f)
                 .SetLink(gameObject);
         }

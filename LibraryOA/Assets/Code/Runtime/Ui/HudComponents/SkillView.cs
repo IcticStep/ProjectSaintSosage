@@ -29,7 +29,8 @@ namespace Code.Runtime.Ui.HudComponents
         private IStaticDataService _staticDataService;
         private StaticBookType _staticBookType;
         private int _skillValue;
-        
+        private Tweener _tweener;
+
         public BookType BookType => _bookType;
         public TextMeshProUGUI Text => _text;
         public Image IconImage => _iconImage;
@@ -72,7 +73,13 @@ namespace Code.Runtime.Ui.HudComponents
             if(_skillValue == skill)
                 return;
 
-            _animationTarget
+            if(_tweener != null)
+            {
+                _tweener.Kill(complete: true);
+                _tweener = null;
+            }
+            
+            _tweener = _animationTarget
                 .DOPunchScale(Vector3.one * 1.1f, 0.5f, 1, 0.5f)
                 .SetLink(gameObject);
             _skillValue = skill;
