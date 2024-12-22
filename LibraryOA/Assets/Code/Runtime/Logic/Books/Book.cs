@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Code.Runtime.Logic.Books
 {
@@ -6,14 +7,25 @@ namespace Code.Runtime.Logic.Books
     {
         [SerializeField]
         private MeshRenderer _meshRenderer;
+        [SerializeField]
+        private Image _icon;
 
-        public void SetMaterial(Material material) =>
+        public void SetView(Material material, Sprite icon)
+        {
             _meshRenderer.sharedMaterial = material;
+            _icon.sprite = icon;
+        }
 
-        public void Show() =>
+        public void Show()
+        {
             _meshRenderer.enabled = true;
-        
-        public void Hide() =>
+            _icon.enabled = true;
+        }
+
+        public void Hide()
+        {
             _meshRenderer.enabled = false;
+            _icon.enabled = false;
+        }
     }
 }
