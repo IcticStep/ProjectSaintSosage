@@ -12,8 +12,6 @@ namespace Code.Runtime.Logic.Books
         private BookStorage _bookStorage;
         [SerializeField]
         private Book _bookObject;
-        [SerializeField]
-        private MeshRenderer _bookMeshRenderer;
         
         private IStaticDataService _staticData;
 
@@ -33,7 +31,10 @@ namespace Code.Runtime.Logic.Books
         private void UpdateView()
         {
             SetMaterialIfAny();
-            _bookMeshRenderer.enabled = _bookStorage.HasBook;
+            if(_bookStorage.HasBook)
+                _bookObject.Show();
+            else
+                _bookObject.Hide();
         }
 
         private void SetMaterialIfAny()
@@ -42,7 +43,7 @@ namespace Code.Runtime.Logic.Books
             if(targetMaterial is null)
                 return;
 
-            _bookObject.SetMaterial(targetMaterial);
+            _bookObject.SetView(targetMaterial, GetBookIcon());
         }
 
         private Material GetBookMaterial()
@@ -53,6 +54,16 @@ namespace Code.Runtime.Logic.Books
             
             StaticBook data = _staticData.ForBook(bookId);
             return data.StaticBookType.Material;
+        }
+        
+        private Sprite GetBookIcon()
+        {
+            string bookId = _bookStorage.CurrentBookId;
+            if(string.IsNullOrWhiteSpace(bookId))
+                return null;
+            
+            StaticBook data = _staticData.ForBook(bookId);
+            return data.StaticBookType.Icon;
         }
     }
 }

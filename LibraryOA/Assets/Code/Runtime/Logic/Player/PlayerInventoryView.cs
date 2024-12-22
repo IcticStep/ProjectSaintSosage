@@ -44,8 +44,9 @@ namespace Code.Runtime.Logic.Player
                 }
 
                 _bookViews[i].Show();
-                Material targetMaterial = GetBookMaterial(books[i]);
-                _bookViews[i].SetMaterial(targetMaterial);
+                string bookId = books[i];
+                Material targetMaterial = GetBookMaterial(bookId);
+                _bookViews[i].SetView(targetMaterial, GetBookIcon(bookId));
             }
         }
 
@@ -56,6 +57,15 @@ namespace Code.Runtime.Logic.Player
             
             StaticBook data = _staticData.ForBook(bookId);
             return data.StaticBookType.Material;
+        }
+        
+        private Sprite GetBookIcon(string bookId)
+        {
+            if(string.IsNullOrWhiteSpace(bookId))
+                return null;
+            
+            StaticBook data = _staticData.ForBook(bookId);
+            return data.StaticBookType.Icon;
         }
     }
 }

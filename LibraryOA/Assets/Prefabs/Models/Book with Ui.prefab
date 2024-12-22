@@ -418,6 +418,7 @@ MonoBehaviour:
   _unFadeDuration: 0
   _fadeEase: 10
   _unFadeEase: 10
+  _ignoreTimeScale: 0
 --- !u!225 &6075837484505450221
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -566,6 +567,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4698053369898402105, guid: 2f4b9797faa27634b9222dfce2e41a27,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698053369898402105, guid: 2f4b9797faa27634b9222dfce2e41a27,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698053369898402105, guid: 2f4b9797faa27634b9222dfce2e41a27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.19
+      objectReference: {fileID: 0}
     - target: {fileID: 6543544753182646108, guid: 2f4b9797faa27634b9222dfce2e41a27,
         type: 3}
       propertyPath: m_Name
@@ -609,12 +625,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4209575616350237588}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &6327429960675891832 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 7900693350719924716, guid: 2f4b9797faa27634b9222dfce2e41a27,
-    type: 3}
-  m_PrefabInstance: {fileID: 4209575616350237588}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6963759028763700424 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6543544753182646108, guid: 2f4b9797faa27634b9222dfce2e41a27,
@@ -635,7 +645,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bookStorage: {fileID: 0}
   _bookObject: {fileID: 9149672012563982124}
-  _bookMeshRenderer: {fileID: 6327429960675891832}
 --- !u!114 &3769826846778193338
 MonoBehaviour:
   m_ObjectHideFlags: 0
