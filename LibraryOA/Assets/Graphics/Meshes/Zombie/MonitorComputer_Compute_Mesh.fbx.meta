@@ -7,6 +7,12 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Numbers
+    second: {fileID: -876546973899608171, guid: 83fe486154a087d42a49728317897a19,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: UberMaterial
     second: {fileID: 2100000, guid: dae9a63f447b5aa4991c576afb0f5c14, type: 2}
   materials:

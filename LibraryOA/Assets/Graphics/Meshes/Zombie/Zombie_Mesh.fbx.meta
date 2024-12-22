@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7b4b8a795e3e4a7429ef8840d8864ea7
+guid: 426ad98d850a14e4887aa8a5f08d9917
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -236,43 +236,29 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: RightShoulder
-      humanName: RightShoulder
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: LeftToe
-      humanName: LeftToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: RightToe
-      humanName: RightToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
     skeleton:
-    - name: Customer_Mesh(Clone)
+    - name: Zombie_Mesh(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Customer_Rig
-      parentName: Customer_Mesh(Clone)
+    - name: Outline_Zombie
+      parentName: Zombie_Mesh(Clone)
+      position: {x: 8.470329e-24, y: 0, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: Zombie
+      parentName: Zombie_Mesh(Clone)
+      position: {x: 8.470329e-24, y: 0, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: ZombieRig
+      parentName: Zombie_Mesh(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
       scale: {x: 100, y: 100, z: 100}
     - name: Hips
-      parentName: Customer_Rig
+      parentName: ZombieRig
       position: {x: -0, y: 0.010449875, z: -3.5527136e-17}
       rotation: {x: 1, y: 0.0000003993867, z: -0.00000007549792, w: -0.00000004371136}
       scale: {x: 0.9999998, y: 0.9999997, z: 0.99999976}
@@ -406,11 +392,6 @@ ModelImporter:
       position: {x: -0, y: 0.0067937323, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Customer
-      parentName: Customer_Mesh(Clone)
-      position: {x: 8.470329e-24, y: 0, z: 0}
-      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 0.01, y: 0.01, z: 0.01}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -429,7 +410,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 1
+  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
