@@ -16,7 +16,7 @@ namespace Code.Runtime.StaticData.GlobalGoals
         private string _uniqueId = Guid.NewGuid().ToString();
         
         [SerializeField]
-        private List<GlobalStep> _globalSteps;
+        private List<GlobalStep> _globalSteps = new();
 
         [SerializeField]
         private Sprite _icon;
