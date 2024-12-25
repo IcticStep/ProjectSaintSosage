@@ -17,13 +17,10 @@ namespace Code.Runtime.Logic.GlobalGoals.RocketStart
         private void Awake() =>
             _transform = transform;
 
-        public void Throw()
-        {
-            _duration = 1f;
+        public void Throw() =>
             _transform
                 .DOLocalRotate(_targetRotation, _duration, RotateMode.LocalAxisAdd)
                 .SetLink(gameObject)
                 .SetEase(_ease);
-        }
     }
 }

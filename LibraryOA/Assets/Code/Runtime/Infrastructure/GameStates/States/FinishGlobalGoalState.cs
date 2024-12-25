@@ -79,10 +79,13 @@ namespace Code.Runtime.Infrastructure.GameStates.States
         private async UniTaskVoid PlayFinal()
         {
             await _globalGoalsVisualizationService.PlayFinishCutscene();
+            
             _cameraProvider.StartLookingAfter(_rocketProvider.Rocket.CameraTargetOnFly);
             await _rocketProvider.Rocket.LaunchAsync();
+            
             _levelCleanUpService.CleanUp();
             _cameraProvider.StopLookingAfter();
+            
             await _loadingCurtainService.ShowBlackAsync();
             _gameStateMachine.EnterState<MenuGameState>();
             await _sceneLoader.LoadSceneAsync(_staticDataService.ScenesRouting.AuthorsScene);
