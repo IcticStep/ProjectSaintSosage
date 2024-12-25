@@ -16,94 +16,94 @@ MonoBehaviour:
   <PlayerInitialPosition>k__BackingField: {x: -9.42, y: 0, z: 0}
   <InteractablesSpawns>k__BackingField:
     _bookSlots:
-    - Id: Library_eddc3354-a318-48aa-a6eb-822a7656deeb
-      InitialBookId: 
-      Position: {x: -7.7799706, y: -0.2663431, z: 22.3885}
-      TransformRotation: {x: -0, y: 0.6187217, z: -0, w: 0.7856103}
-    - Id: Library_567825eb-c8c5-48bd-ad92-5d2d6a58a60c
-      InitialBookId: 
-      Position: {x: 7.751467, y: -0.2663431, z: 25.114342}
-      TransformRotation: {x: -0, y: -0.74521005, z: -0, w: 0.6668298}
-    - Id: Library_a9b708fc-521b-473a-84ef-a29a15c220dc
-      InitialBookId: 
-      Position: {x: -4.234122, y: -0.2663431, z: 30.971943}
-      TransformRotation: {x: -0, y: 0.9623266, z: -0, w: 0.2718966}
-    - Id: Library_adb24835-064b-4417-a1c2-7d242c8e489f
-      InitialBookId: 
-      Position: {x: 6.359076, y: -0.2663431, z: 28.788666}
-      TransformRotation: {x: -0, y: 0.8876318, z: -0, w: -0.46055382}
-    - Id: BookSlotSpawn_0b77a526-e998-4744-b304-e96ab49f1127
-      InitialBookId: 
-      Position: {x: 1.2656134, y: -0.2663431, z: 16.458927}
-      TransformRotation: {x: -0, y: -0.086758375, z: -0, w: 0.9962294}
-    - Id: Library_ac3a74a1-72b0-4b6e-8319-1e6adebe941d
-      InitialBookId: 
-      Position: {x: -7.9991403, y: -0.2663431, z: 24.356602}
-      TransformRotation: {x: -0, y: 0.712306, z: -0, w: 0.7018691}
-    - Id: Library_fe3adb30-a595-4f37-9b97-d1d99dccdc7a
-      InitialBookId: 
-      Position: {x: 4.8452573, y: -0.2663431, z: 18.07928}
-      TransformRotation: {x: -0, y: -0.33178484, z: -0, w: 0.94335514}
-    - Id: Library_ad06fc22-a9e2-4b21-b9e1-236a5236aefe
-      InitialBookId: 
-      Position: {x: -7.078242, y: -0.2663431, z: 20.536736}
-      TransformRotation: {x: -0, y: 0.51537967, z: -0, w: 0.85696197}
-    - Id: Library_5f454422-34b8-4630-ac65-3277342567e7
-      InitialBookId: 
-      Position: {x: 7.2873588, y: -0.2663431, z: 27.039452}
-      TransformRotation: {x: -0, y: -0.82290983, z: -0, w: 0.56817216}
-    - Id: Library_f7b78bdc-3ebc-4de9-b298-d2311b3fa2d6
-      InitialBookId: 
-      Position: {x: -7.721976, y: -0.2663431, z: 26.317375}
-      TransformRotation: {x: -0, y: 0.79465693, z: -0, w: 0.60705894}
-    - Id: Library_d416bef7-d903-4581-9728-7066a9784214
-      InitialBookId: 
-      Position: {x: -5.7784076, y: -0.2663431, z: 29.73233}
-      TransformRotation: {x: -0, y: 0.9206606, z: -0, w: 0.39036414}
-    - Id: Library_d144499a-609e-4a6d-8502-8bd47dd51c03
-      InitialBookId: 
-      Position: {x: 7.7222385, y: -0.2663431, z: 23.134293}
-      TransformRotation: {x: -0, y: -0.655758, z: -0, w: 0.75497115}
-    - Id: Library_3f85f1e1-d5f9-4a0f-95cb-47578b55fc86
-      InitialBookId: 
-      Position: {x: -2.4300737, y: -0.2663431, z: 31.788559}
-      TransformRotation: {x: -0, y: 0.98881596, z: -0, w: 0.14914104}
-    - Id: Library_629469be-00d1-4a0a-8b5e-7d3ecaa0225b
-      InitialBookId: 
-      Position: {x: 3.1577854, y: -0.2663431, z: 17.042997}
-      TransformRotation: {x: -0, y: -0.21093494, z: -0, w: 0.97750014}
-    - Id: Library_355028be-29cc-4ef2-bf53-a8e34a4dab9a
-      InitialBookId: 
-      Position: {x: 5.0249443, y: -0.2663431, z: 30.252068}
-      TransformRotation: {x: -0, y: 0.9383553, z: -0, w: -0.34567243}
     - Id: Library_69fba0bd-2c0d-4476-9f1b-b2175280715c
       InitialBookId: 
       Position: {x: 3.368795, y: -0.2663431, z: 31.337708}
       TransformRotation: {x: -0, y: 0.9742803, z: -0, w: -0.22533971}
+    - Id: Library_a9b708fc-521b-473a-84ef-a29a15c220dc
+      InitialBookId: 
+      Position: {x: -4.234122, y: -0.2663431, z: 30.971943}
+      TransformRotation: {x: -0, y: 0.9623266, z: -0, w: 0.2718966}
+    - Id: Library_567825eb-c8c5-48bd-ad92-5d2d6a58a60c
+      InitialBookId: 
+      Position: {x: 7.751467, y: -0.2663431, z: 25.114342}
+      TransformRotation: {x: -0, y: -0.74521005, z: -0, w: 0.6668298}
+    - Id: Library_ac3a74a1-72b0-4b6e-8319-1e6adebe941d
+      InitialBookId: 
+      Position: {x: -7.9991403, y: -0.2663431, z: 24.356602}
+      TransformRotation: {x: -0, y: 0.712306, z: -0, w: 0.7018691}
     - Id: Library_b2098882-8d29-466d-afae-b3a8bbe9a6f2
       InitialBookId: 
       Position: {x: 7.2015104, y: -0.2663431, z: 21.223717}
       TransformRotation: {x: -0, y: -0.5559641, z: -0, w: 0.8312064}
-    - Id: Library_52ca5e64-a160-4cc4-a0ef-2e2d62327cb5
+    - Id: Library_adb24835-064b-4417-a1c2-7d242c8e489f
       InitialBookId: 
-      Position: {x: -5.938042, y: -0.2663431, z: 18.917664}
-      TransformRotation: {x: -0, y: 0.40391004, z: -0, w: 0.91479874}
-    - Id: Library_228e802f-60a2-4017-a24c-363cae0a7fef
+      Position: {x: 6.359076, y: -0.2663431, z: 28.788666}
+      TransformRotation: {x: -0, y: 0.8876318, z: -0, w: -0.46055382}
+    - Id: Library_5f454422-34b8-4630-ac65-3277342567e7
       InitialBookId: 
-      Position: {x: -0.47961888, y: -0.2663431, z: 32.130875}
-      TransformRotation: {x: -0, y: 0.99971116, z: -0, w: 0.024033427}
-    - Id: Library_2fcd4947-6b8a-493e-8a94-e4a19b24cf53
-      InitialBookId: 
-      Position: {x: 1.4946867, y: -0.2663431, z: 31.977375}
-      TransformRotation: {x: -0, y: 0.9948404, z: -0, w: -0.101453036}
+      Position: {x: 7.2873588, y: -0.2663431, z: 27.039452}
+      TransformRotation: {x: -0, y: -0.82290983, z: -0, w: 0.56817216}
     - Id: Library_397f3435-f82a-4bd7-96ae-f26e682965e1
       InitialBookId: 
       Position: {x: 6.2220016, y: -0.2663431, z: 19.502668}
       TransformRotation: {x: -0, y: -0.44740242, z: -0, w: 0.8943328}
+    - Id: Library_d144499a-609e-4a6d-8502-8bd47dd51c03
+      InitialBookId: 
+      Position: {x: 7.7222385, y: -0.2663431, z: 23.134293}
+      TransformRotation: {x: -0, y: -0.655758, z: -0, w: 0.75497115}
+    - Id: Library_228e802f-60a2-4017-a24c-363cae0a7fef
+      InitialBookId: 
+      Position: {x: -0.47961888, y: -0.2663431, z: 32.130875}
+      TransformRotation: {x: -0, y: 0.99971116, z: -0, w: 0.024033427}
+    - Id: Library_52ca5e64-a160-4cc4-a0ef-2e2d62327cb5
+      InitialBookId: 
+      Position: {x: -5.938042, y: -0.2663431, z: 18.917664}
+      TransformRotation: {x: -0, y: 0.40391004, z: -0, w: 0.91479874}
     - Id: Library_7fea6fa2-ff49-4ce7-aa90-25027cc4e760
       InitialBookId: 
       Position: {x: -6.965895, y: -0.2663431, z: 28.14762}
       TransformRotation: {x: -0, y: 0.8644754, z: -0, w: 0.5026752}
+    - Id: Library_629469be-00d1-4a0a-8b5e-7d3ecaa0225b
+      InitialBookId: 
+      Position: {x: 3.1577854, y: -0.2663431, z: 17.042997}
+      TransformRotation: {x: -0, y: -0.21093494, z: -0, w: 0.97750014}
+    - Id: Library_2fcd4947-6b8a-493e-8a94-e4a19b24cf53
+      InitialBookId: 
+      Position: {x: 1.4946867, y: -0.2663431, z: 31.977375}
+      TransformRotation: {x: -0, y: 0.9948404, z: -0, w: -0.101453036}
+    - Id: Library_d416bef7-d903-4581-9728-7066a9784214
+      InitialBookId: 
+      Position: {x: -5.7784076, y: -0.2663431, z: 29.73233}
+      TransformRotation: {x: -0, y: 0.9206606, z: -0, w: 0.39036414}
+    - Id: Library_eddc3354-a318-48aa-a6eb-822a7656deeb
+      InitialBookId: 
+      Position: {x: -7.7799706, y: -0.2663431, z: 22.3885}
+      TransformRotation: {x: -0, y: 0.6187217, z: -0, w: 0.7856103}
+    - Id: Library_3f85f1e1-d5f9-4a0f-95cb-47578b55fc86
+      InitialBookId: 
+      Position: {x: -2.4300737, y: -0.2663431, z: 31.788559}
+      TransformRotation: {x: -0, y: 0.98881596, z: -0, w: 0.14914104}
+    - Id: Library_f7b78bdc-3ebc-4de9-b298-d2311b3fa2d6
+      InitialBookId: 
+      Position: {x: -7.721976, y: -0.2663431, z: 26.317375}
+      TransformRotation: {x: -0, y: 0.79465693, z: -0, w: 0.60705894}
+    - Id: Library_ad06fc22-a9e2-4b21-b9e1-236a5236aefe
+      InitialBookId: 
+      Position: {x: -7.078242, y: -0.2663431, z: 20.536736}
+      TransformRotation: {x: -0, y: 0.51537967, z: -0, w: 0.85696197}
+    - Id: BookSlotSpawn_0b77a526-e998-4744-b304-e96ab49f1127
+      InitialBookId: 
+      Position: {x: 1.2656134, y: -0.2663431, z: 16.458927}
+      TransformRotation: {x: -0, y: -0.086758375, z: -0, w: 0.9962294}
+    - Id: Library_fe3adb30-a595-4f37-9b97-d1d99dccdc7a
+      InitialBookId: 
+      Position: {x: 4.8452573, y: -0.2663431, z: 18.07928}
+      TransformRotation: {x: -0, y: -0.33178484, z: -0, w: 0.94335514}
+    - Id: Library_355028be-29cc-4ef2-bf53-a8e34a4dab9a
+      InitialBookId: 
+      Position: {x: 5.0249443, y: -0.2663431, z: 30.252068}
+      TransformRotation: {x: -0, y: 0.9383553, z: -0, w: -0.34567243}
     _readingTables:
     - Id: ReadingTableSpawn_f2236742-8d33-4b54-bde7-9fab7a0c39d2
       InitialBookId: 
