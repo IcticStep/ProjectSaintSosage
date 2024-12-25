@@ -23,7 +23,7 @@ MonoBehaviour:
     m_LocalVariables: []
   Duration: 10
   Cost: 50
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 8419475b8d854f44c9f1ce1417178a30, type: 3}
   SkillRequirements:
   - _bookType: 0
     _requiredLevel: 1

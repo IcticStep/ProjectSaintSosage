@@ -20,7 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fde0639f127f37b41b4b50c7937af7bd, type: 2}
   - {fileID: 11400000, guid: 8bfbfdf9db2c0cd48918d598570e2b92, type: 2}
   - {fileID: 11400000, guid: 35f6bdf54cc1cb94ba97947b57d31dbe, type: 2}
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 04e7b75d0697d6b47a058ebcd4cc2cb6, type: 3}
   _cameraMoveDuration: 1.5
   _cameraLookAtStepCompletedDelay: 0.75
   <LocalizedName>k__BackingField:
