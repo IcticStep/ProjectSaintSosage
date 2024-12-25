@@ -1,3 +1,4 @@
+using System;
 using Code.Runtime.StaticData.GlobalGoals;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
@@ -14,11 +15,16 @@ namespace Code.Runtime.Logic.GlobalGoals
         [field: SerializeField]
         public GlobalGoal GlobalGoal { get; private set; }
 
+        private IGoalFinisher _goalFinisher;
+
         private UniTaskCompletionSource _directorStopCompletionSource = new();
 
         private void OnValidate() =>
             _director ??= GetComponent<PlayableDirector>();
-        
+
+        private void Awake() =>
+            _goalFinisher = GetComponent<IGoalFinisher>();
+
         private void Start() =>
             _director.stopped += OnDirectorStopped;
 
@@ -29,6 +35,7 @@ namespace Code.Runtime.Logic.GlobalGoals
         {
             _director.Play();
             await _directorStopCompletionSource.Task;
+            await _goalFinisher.FinishAsync();
         }
 
         private void OnDirectorStopped(PlayableDirector obj)

@@ -80,9 +80,6 @@ namespace Code.Runtime.Infrastructure.GameStates.States
         {
             await _globalGoalsVisualizationService.PlayFinishCutscene();
             
-            _cameraProvider.StartLookingAfter(_rocketProvider.Rocket.CameraTargetOnFly);
-            await _rocketProvider.Rocket.LaunchAsync();
-            
             _levelCleanUpService.CleanUp();
             _cameraProvider.StopLookingAfter();
             
