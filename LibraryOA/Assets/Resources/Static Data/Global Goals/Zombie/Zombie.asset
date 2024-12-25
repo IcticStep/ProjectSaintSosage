@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19788fb62cd4fd1a197f4baaad6c09b, type: 3}
+  m_Name: Zombie
+  m_EditorClassIdentifier: 
+  _uniqueId: 578422a0-9015-4843-8a0b-0b26015e14d4
+  _globalSteps:
+  - {fileID: 11400000, guid: 23158e1d14b308841aae80ad663f501e, type: 2}
+  - {fileID: 11400000, guid: ea966c24652ac2549916a82513c75cf5, type: 2}
+  - {fileID: 11400000, guid: d15a5b47443be234880da9a44c0435eb, type: 2}
+  - {fileID: 11400000, guid: fde0639f127f37b41b4b50c7937af7bd, type: 2}
+  - {fileID: 11400000, guid: 8bfbfdf9db2c0cd48918d598570e2b92, type: 2}
+  - {fileID: 11400000, guid: 35f6bdf54cc1cb94ba97947b57d31dbe, type: 2}
+  _icon: {fileID: 21300000, guid: 04e7b75d0697d6b47a058ebcd4cc2cb6, type: 3}
+  _cameraMoveDuration: 1.5
+  _cameraLookAtStepCompletedDelay: 0.75
+  <LocalizedName>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:047881e3c470bb54a8b3e241a8e19031
+    m_TableEntryReference:
+      m_KeyId: 119538150136848384
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5c07404354409e9f7497dc3d6fb4b9, type: 3}
+  m_Name: 6 Injector
+  m_EditorClassIdentifier: 
+  LocalizedName:
+    m_TableReference:
+      m_TableCollectionName: GUID:047881e3c470bb54a8b3e241a8e19031
+    m_TableEntryReference:
+      m_KeyId: 119537787488935936
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  Duration: 10
+  Cost: 150
+  Icon: {fileID: 21300000, guid: 5381946f9a09dec4499fadcb3d408251, type: 3}
+  SkillRequirements:
+  - _bookType: 0
+    _requiredLevel: 6
+  - _bookType: 1
+    _requiredLevel: 8
+  - _bookType: 2
+    _requiredLevel: 8
+  - _bookType: 3
+    _requiredLevel: 7
+  - _bookType: 4
+    _requiredLevel: 7
+  - _bookType: 5
+    _requiredLevel: 6
+  references:
+    version: 2
+    RefIds: []

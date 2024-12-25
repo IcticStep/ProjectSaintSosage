@@ -17,6 +17,6 @@ namespace Code.Runtime.Logic.Player
             _audioPlayer = audioPlayer;
 
         private void OnStep() =>
-            _audioPlayer.PlayUnimportantSfx(_stepsSounds.RandomElement());
+            _audioPlayer?.PlayUnimportantSfx(_stepsSounds.RandomElement());
     }
 }

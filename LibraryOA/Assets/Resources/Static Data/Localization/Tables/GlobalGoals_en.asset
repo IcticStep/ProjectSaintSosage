@@ -38,6 +38,34 @@ MonoBehaviour:
     m_Localized: Hull
     m_Metadata:
       m_Items: []
+  - m_Id: 119537040365953024
+    m_Localized: Virus Identification
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119537162680246272
+    m_Localized: Analyze Virus Structure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119537637748088832
+    m_Localized: Synthesize Antigens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119537674993508352
+    m_Localized: Develop Vaccine Formula
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119537747362029568
+    m_Localized: Simulation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119537787488935936
+    m_Localized: Injector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119538150136848384
+    m_Localized: Cure the zombie
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

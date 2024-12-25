@@ -5,6 +5,7 @@ using Code.Runtime.Logic.GlobalGoals;
 using Code.Runtime.StaticData.GlobalGoals;
 using Cysharp.Threading.Tasks;
 using JetBrains.Annotations;
+using UnityEngine;
 
 namespace Code.Runtime.Services.GlobalGoals.Visualization
 {
@@ -16,7 +17,10 @@ namespace Code.Runtime.Services.GlobalGoals.Visualization
         private GlobalGoal _currentGoal;
 
         public bool InitializedGlobalGoal => _currentGoal is not null;
-        public GlobalGoalScheme CurrentGoalScheme => _goalSchemes[_currentGoal];
+
+        private IEnumerable<GameObject> AllStartObjects => _goalSchemes.Values.SelectMany(x => x.OnStartObjects);
+
+        public GlobalGoalScheme CurrentGoalScheme => _goalSchemes.GetValueOrDefault(_currentGoal);
 
         public void InitializeVisualisationSchemes(IReadOnlyList<GlobalGoalScheme> allSchemes)
         {
@@ -39,6 +43,7 @@ namespace Code.Runtime.Services.GlobalGoals.Visualization
         /// <param name="index"></param>
         public void VisualizeStep(int index)
         {
+            ShowStartObjects();
             GlobalStep step = _currentGoal.GlobalSteps[index];
             GlobalStepScheme stepScheme = GetCurrentGoalStepScheme(step);
             VisualizeStepScheme(stepScheme);
@@ -46,12 +51,14 @@ namespace Code.Runtime.Services.GlobalGoals.Visualization
 
         public void VisualizeStepAndAllBefore(int index)
         {
+            ShowStartObjects();
             GlobalStep step = _currentGoal.GlobalSteps[index];
             VisualizeStepAndAllBefore(step);
         }
-        
+
         public void VisualizeStepAndAllBefore(GlobalStep step)
         {
+            ShowStartObjects();
             foreach(GlobalStepScheme stepScheme in CurrentGoalScheme.GlobalStepsSchemes)
             {
                 VisualizeStepScheme(stepScheme);
@@ -66,7 +73,10 @@ namespace Code.Runtime.Services.GlobalGoals.Visualization
         public void ResetAllVisualizations()
         {
             foreach(GlobalGoalScheme goalScheme in _goalSchemes.Values)
-                ResetVisualization(goalScheme);                
+            {
+                HideStartObjects(goalScheme);
+                ResetVisualization(goalScheme);
+            }                
         }
 
         public UniTask PlayFinishCutscene() =>
@@ -95,5 +105,20 @@ namespace Code.Runtime.Services.GlobalGoals.Visualization
             _currentGoalStepsSchemes ??= CurrentGoalScheme
                 .GlobalStepsSchemes
                 .ToDictionary(stepScheme => stepScheme.Step, stepScheme => stepScheme);
+
+        public void ShowStartObjects()
+        {
+            foreach(GameObject startObject in AllStartObjects)
+                startObject.SetActive(false);
+
+            foreach(GameObject onStartObject in CurrentGoalScheme.OnStartObjects)
+                onStartObject.SetActive(true);
+        }
+
+        private void HideStartObjects(GlobalGoalScheme goalScheme)
+        {
+            foreach(GameObject onStartObject in goalScheme.OnStartObjects)
+                onStartObject.SetActive(false);
+        }
     }
 }

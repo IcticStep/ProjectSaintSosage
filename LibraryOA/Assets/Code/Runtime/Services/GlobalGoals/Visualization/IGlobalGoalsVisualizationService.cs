@@ -25,5 +25,6 @@ namespace Code.Runtime.Services.GlobalGoals.Visualization
         void ResetCurrentVisualization();
         void ResetAllVisualizations();
         UniTask PlayFinishCutscene();
+        void ShowStartObjects();
     }
 }

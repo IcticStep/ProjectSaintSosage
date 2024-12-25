@@ -46,7 +46,10 @@ namespace Code.Editor.Editors.DiInstallers.GlobalGoals
             InitDataIfNone(globalGoalsInstaller);
             DrawGlobalGoalPopup(out bool globalGoalChanged);
             if(globalGoalChanged || !_globalGoalsVisualizationService.InitializedGlobalGoal)
+            {
                 ReinitializeVisualization();
+                _globalGoalsVisualizationService.ShowStartObjects();
+            }
 
             DrawVisualizationSlider(globalGoalsInstaller, out bool visualizationStepChanged);
             if(visualizationStepChanged)

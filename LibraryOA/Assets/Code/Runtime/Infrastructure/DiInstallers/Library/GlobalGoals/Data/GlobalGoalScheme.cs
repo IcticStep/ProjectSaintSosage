@@ -17,16 +17,21 @@ namespace Code.Runtime.Infrastructure.DiInstallers.Library.GlobalGoals.Data
         
         [SerializeField]
         private GlobalGoalDirector _director;
+        
+        [SerializeField]
+        private List<GameObject> _onStartObjects;
 
         public GlobalGoal Goal => _globalGoal;
         public IReadOnlyList<GlobalStepScheme> GlobalStepsSchemes => _globalStepsSchemes;
         public GlobalGoalDirector Director => _director;
-        
-        public GlobalGoalScheme(GlobalGoal globalGoal, List<GlobalStepScheme> globalStepsSchemes, GlobalGoalDirector director)
+        public List<GameObject> OnStartObjects => _onStartObjects;
+
+        public GlobalGoalScheme(GlobalGoal globalGoal, List<GlobalStepScheme> globalStepsSchemes, GlobalGoalDirector director, List<GameObject> onStartObjects)
         {
             _globalGoal = globalGoal;
             _globalStepsSchemes = globalStepsSchemes;
             _director = director;
+            _onStartObjects = onStartObjects;
         }
 
         public override string ToString() =>

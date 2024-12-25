@@ -7,6 +7,7 @@ using Code.Runtime.Infrastructure.Services.SceneMenegment;
 using Code.Runtime.Infrastructure.Services.StaticData;
 using Code.Runtime.Services.Customers.Delivering;
 using Code.Runtime.Services.Customers.Queue;
+using Code.Runtime.Services.GlobalGoals.Visualization;
 using Code.Runtime.Services.Loading;
 using Code.Runtime.StaticData.Level;
 using Code.Runtime.StaticData.Level.MarkersStaticData;
@@ -29,11 +30,13 @@ namespace Code.Runtime.Infrastructure.GameStates.States
         private readonly ICustomersDeliveringService _customersDeliveringService;
         private readonly ICameraProvider _cameraProvider;
         private readonly ILoadingCurtainService _loadingCurtainService;
+        private readonly IGlobalGoalsVisualizationService _globalGoalsVisualizationService;
 
         public LoadLevelState(GameStateMachine stateMachine, ISceneLoader sceneLoader, IStaticDataService staticData,
             ISaveLoadRegistry saveLoadRegistry, IPersistantProgressService persistentProgress, IInteractablesFactory interactablesFactory,
             ICharactersFactory charactersFactory, IHudFactory hudFactory, ICustomersQueueService customersQueueService,
-            ICustomersDeliveringService customersDeliveringService, ICameraProvider cameraProvider, ILoadingCurtainService loadingCurtainService)
+            ICustomersDeliveringService customersDeliveringService, ICameraProvider cameraProvider, ILoadingCurtainService loadingCurtainService,
+            IGlobalGoalsVisualizationService globalGoalsVisualizationService)
         {
             _stateMachine = stateMachine;
             _sceneLoader = sceneLoader;
@@ -47,6 +50,7 @@ namespace Code.Runtime.Infrastructure.GameStates.States
             _customersDeliveringService = customersDeliveringService;
             _cameraProvider = cameraProvider;
             _loadingCurtainService = loadingCurtainService;
+            _globalGoalsVisualizationService = globalGoalsVisualizationService;
         }
 
         public void Start(string payload) =>
@@ -63,6 +67,7 @@ namespace Code.Runtime.Infrastructure.GameStates.States
             InformProgressReaders();
             InitUi();
             CameraFollow(player);
+            _globalGoalsVisualizationService.ShowStartObjects();
             
             StartGameplay().Forget();
         }
