@@ -35,7 +35,7 @@ Google Play: [https://github.com/IcticStep/LibTake](https://play.google.com/stor
     - ci;
     - tools.
       
-- [@keroNight](https://www.github.com/keroNight)
+- [@ShadowShardTools](https://www.github.com/ShadowShardTools)
     - 3d models;
     - shaders;
     - materials;
