@@ -66,6 +66,34 @@ MonoBehaviour:
     m_Localized: Cure the zombie
     m_Metadata:
       m_Items: []
+  - m_Id: 120622076846645248
+    m_Localized: Libtake Development
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120622548382883840
+    m_Localized: Setup Environment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120622812716310528
+    m_Localized: Prototyping
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120622835415883776
+    m_Localized: Create Mechanics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120622883893649408
+    m_Localized: Create Graphics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120624202851262464
+    m_Localized: Music and Sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120624251723292672
+    m_Localized: Testing
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

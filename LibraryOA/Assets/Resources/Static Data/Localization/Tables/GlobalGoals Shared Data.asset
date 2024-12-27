@@ -63,6 +63,34 @@ MonoBehaviour:
     m_Key: Zombie Goal
     m_Metadata:
       m_Items: []
+  - m_Id: 120622076846645248
+    m_Key: Libtake Development
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120622548382883840
+    m_Key: setup environment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120622812716310528
+    m_Key: prototyping
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120622835415883776
+    m_Key: create mechanics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120622883893649408
+    m_Key: create graphics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120624202851262464
+    m_Key: music sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120624251723292672
+    m_Key: testing
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
