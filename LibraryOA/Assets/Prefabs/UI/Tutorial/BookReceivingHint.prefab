@@ -142,7 +142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1155422284, guid: 7bb12e1a1363c514bb9ee72a9acafce2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7add406056d52843be849defa35508f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -344,6 +344,7 @@ MonoBehaviour:
   _unFadeDuration: 0.7
   _fadeEase: 10
   _unFadeEase: 10
+  _ignoreTimeScale: 0
 --- !u!225 &7878457416427662607
 CanvasGroup:
   m_ObjectHideFlags: 0
