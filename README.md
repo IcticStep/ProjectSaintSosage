@@ -33,6 +33,7 @@ Google Play: [https://github.com/IcticStep/LibTake](https://play.google.com/stor
     - localization;
     - music and sounds;
     - ci;
+    - cutscenes;
     - tools.
       
 - [@ShadowShardTools](https://www.github.com/ShadowShardTools)
@@ -40,4 +41,5 @@ Google Play: [https://github.com/IcticStep/LibTake](https://play.google.com/stor
     - shaders;
     - materials;
     - animations;
+    - sprites
     - VFX.
